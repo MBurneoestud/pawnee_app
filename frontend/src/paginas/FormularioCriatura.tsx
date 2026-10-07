@@ -77,7 +77,7 @@ export function FormularioCriatura() {
     return (
       <MarcoPagina>
         <div className="panel flex items-center gap-4 p-8 text-sm text-mist">
-          <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-signal shadow-[0_0_18px_rgba(82,215,245,0.8)]" />
+          <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-signal shadow-[0_0_18px_rgba(217,164,65,0.8)]" />
           Cargando datos de la criatura...
         </div>
       </MarcoPagina>
@@ -87,12 +87,12 @@ export function FormularioCriatura() {
   return (
     <MarcoPagina>
       <div className="mx-auto max-w-3xl">
-        <Link to="/" className="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-slate-400 transition hover:text-signal">
+        <Link to="/" className="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-stone-400 transition hover:text-signal">
           <span aria-hidden="true">←</span>
           Volver a la lista
         </Link>
         <section className="panel overflow-hidden">
-          <div className="border-b border-line bg-gradient-to-r from-signal/[0.08] via-transparent to-violet/[0.08] px-6 py-7 sm:px-9">
+          <div className="border-b border-line bg-gradient-to-r from-signal/[0.08] via-transparent to-earth/[0.08] px-6 py-7 sm:px-9">
             <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-signal/20 bg-signal/[0.08] text-lg">
               <span aria-hidden="true">👁️</span>
             </span>
@@ -109,7 +109,7 @@ export function FormularioCriatura() {
             )}
 
             <div>
-              <label htmlFor="nombre" className="mb-2 block text-sm font-semibold text-slate-200">
+              <label htmlFor="nombre" className="mb-2 block text-sm font-semibold text-stone-200">
                 Nombre:
               </label>
               <input
@@ -123,7 +123,7 @@ export function FormularioCriatura() {
 
             <div className="grid gap-6 sm:grid-cols-2">
               <div>
-                <label htmlFor="tipo" className="mb-2 block text-sm font-semibold text-slate-200">
+                <label htmlFor="tipo" className="mb-2 block text-sm font-semibold text-stone-200">
                   Tipo:
                 </label>
                 <select
@@ -141,7 +141,7 @@ export function FormularioCriatura() {
               </div>
 
               <div>
-                <label htmlFor="estado" className="mb-2 block text-sm font-semibold text-slate-200">
+                <label htmlFor="estado" className="mb-2 block text-sm font-semibold text-stone-200">
                   Estado:
                 </label>
                 <select
@@ -160,7 +160,7 @@ export function FormularioCriatura() {
             </div>
 
             <div>
-              <label htmlFor="habilidades" className="mb-2 block text-sm font-semibold text-slate-200">
+              <label htmlFor="habilidades" className="mb-2 block text-sm font-semibold text-stone-200">
                 Habilidades (separadas por comas):
               </label>
               <input
@@ -173,7 +173,7 @@ export function FormularioCriatura() {
             </div>
 
             <div className="max-w-xs">
-              <label htmlFor="nivelPeligro" className="mb-2 block text-sm font-semibold text-slate-200">
+              <label htmlFor="nivelPeligro" className="mb-2 block text-sm font-semibold text-stone-200">
                 Nivel de peligro (1-10):
               </label>
               <input

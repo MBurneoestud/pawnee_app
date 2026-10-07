@@ -38,10 +38,10 @@ export function ListaAvistamientos() {
         <section className="panel relative isolate overflow-hidden p-7 sm:p-10">
           <div
             aria-hidden="true"
-            className="absolute -right-12 -top-28 -z-10 h-80 w-80 rounded-full bg-gradient-to-br from-violet/15 to-signal/10 blur-2xl"
+            className="absolute -right-12 -top-28 -z-10 h-80 w-80 rounded-full bg-gradient-to-br from-earth/15 to-signal/10 blur-2xl"
           />
           <div className="relative max-w-3xl">
-            <span className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-violet/25 bg-violet/[0.09] text-xl">
+            <span className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-earth/25 bg-earth/[0.09] text-xl">
               <span aria-hidden="true">◉</span>
             </span>
             <h1 className="text-3xl font-extrabold tracking-[-0.045em] text-white sm:text-5xl">
@@ -60,7 +60,7 @@ export function ListaAvistamientos() {
 
         {cargando && (
           <div className="panel flex items-center gap-4 p-8 text-sm text-mist">
-            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-signal shadow-[0_0_18px_rgba(82,215,245,0.8)]" />
+            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-signal shadow-[0_0_18px_rgba(217,164,65,0.8)]" />
             Cargando avistamientos...
           </div>
         )}
@@ -100,8 +100,8 @@ export function ListaAvistamientos() {
                           {avistamiento.criatura.nombre}
                         </Link>
                       </td>
-                      <td className="px-5 py-4 text-slate-300">{avistamiento.testigo}</td>
-                      <td className="px-5 py-4 text-slate-300">{avistamiento.ubicacion}</td>
+                      <td className="px-5 py-4 text-stone-300">{avistamiento.testigo}</td>
+                      <td className="px-5 py-4 text-stone-300">{avistamiento.ubicacion}</td>
                       <td className="px-5 py-4">
                         <button
                           type="button"

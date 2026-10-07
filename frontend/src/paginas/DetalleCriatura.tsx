@@ -50,7 +50,7 @@ export function DetalleCriatura() {
     return (
       <MarcoPagina>
         <div className="panel flex items-center gap-4 p-8 text-sm text-mist">
-          <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-signal shadow-[0_0_18px_rgba(82,215,245,0.8)]" />
+          <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-signal shadow-[0_0_18px_rgba(217,164,65,0.8)]" />
           Cargando...
         </div>
       </MarcoPagina>
@@ -76,7 +76,7 @@ export function DetalleCriatura() {
   return (
     <MarcoPagina>
       <div className="space-y-8">
-        <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-400 transition hover:text-signal">
+        <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-stone-400 transition hover:text-signal">
           <span aria-hidden="true">←</span>
           Volver a la lista
         </Link>
@@ -84,7 +84,7 @@ export function DetalleCriatura() {
         <section className="panel relative isolate overflow-hidden p-7 sm:p-10">
           <div
             aria-hidden="true"
-            className="absolute -right-16 -top-24 -z-10 h-80 w-80 rounded-full bg-gradient-to-br from-signal/10 to-violet/15 blur-2xl"
+            className="absolute -right-16 -top-24 -z-10 h-80 w-80 rounded-full bg-gradient-to-br from-signal/10 to-earth/15 blur-2xl"
           />
           <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
             <div>
@@ -93,7 +93,7 @@ export function DetalleCriatura() {
               </span>
               <h1 className="text-4xl font-extrabold tracking-[-0.045em] text-white sm:text-5xl">{criatura.nombre}</h1>
               <div className="mt-5 flex flex-wrap gap-2">
-                <span className="rounded-full border border-violet/25 bg-violet/[0.09] px-3 py-1.5 text-xs font-semibold text-violet-200">
+                <span className="rounded-full border border-earth/25 bg-earth/[0.09] px-3 py-1.5 text-xs font-semibold text-earth-light">
                   {criatura.tipo}
                 </span>
                 <span className="rounded-full border border-signal/20 bg-signal/[0.06] px-3 py-1.5 text-xs font-semibold text-signal">
@@ -158,7 +158,7 @@ export function DetalleCriatura() {
               <ul className="mt-6 divide-y divide-line">
                 {avistamientos.map((avistamiento) => (
                   <li key={avistamiento._id} className="flex gap-4 py-5">
-                    <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-signal shadow-[0_0_12px_rgba(82,215,245,0.7)]" />
+                    <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-signal shadow-[0_0_12px_rgba(217,164,65,0.7)]" />
                     <div className="min-w-0">
                       <p className="text-sm font-semibold leading-6 text-white">
                         {avistamiento.fecha.slice(0, 10)} — {avistamiento.testigo} en {avistamiento.ubicacion}

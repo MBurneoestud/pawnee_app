@@ -4,16 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        night: "#090b10",
-        panel: "#111520",
-        "panel-raised": "#171c29",
-        line: "#252b39",
-        mist: "#a7afc1",
-        signal: "#52d7f5",
-        violet: "#8c78e8",
+        night: "#100f0d",
+        panel: "#191713",
+        "panel-raised": "#211e18",
+        line: "#393329",
+        mist: "#bcb4a5",
+        signal: "#d9a441",
+        earth: "#a85f45",
+        "earth-light": "#d99a78",
+        prairie: "#82906b",
       },
       boxShadow: {
-        glow: "0 0 44px rgba(82, 215, 245, 0.11)",
+        glow: "0 0 44px rgba(217, 164, 65, 0.13)",
       },
       fontFamily: {
         sans: ["Manrope", "Avenir Next", "Segoe UI", "sans-serif"],

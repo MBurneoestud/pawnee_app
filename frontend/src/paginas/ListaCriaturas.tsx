@@ -28,7 +28,7 @@ export function ListaCriaturas() {
         <section className="panel relative isolate overflow-hidden p-7 sm:p-10">
           <div
             aria-hidden="true"
-            className="absolute -right-10 -top-32 -z-10 h-80 w-80 rounded-full border border-signal/10 bg-gradient-to-br from-signal/10 to-violet/10 blur-[1px]"
+            className="absolute -right-10 -top-32 -z-10 h-80 w-80 rounded-full border border-signal/10 bg-gradient-to-br from-signal/10 to-earth/10 blur-[1px]"
           />
           <div
             aria-hidden="true"
@@ -75,7 +75,7 @@ export function ListaCriaturas() {
 
         {cargando && (
           <div className="panel flex items-center gap-4 p-8 text-sm text-mist">
-            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-signal shadow-[0_0_18px_rgba(82,215,245,0.8)]" />
+            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-signal shadow-[0_0_18px_rgba(217,164,65,0.8)]" />
             Cargando criaturas...
           </div>
         )}
@@ -106,12 +106,12 @@ export function ListaCriaturas() {
                     <tr key={criatura._id} className="transition hover:bg-white/[0.025]">
                       <td className="whitespace-nowrap px-5 py-4 font-bold text-white">{criatura.nombre}</td>
                       <td className="px-5 py-4">
-                        <span className="rounded-full border border-violet/20 bg-violet/[0.08] px-2.5 py-1 text-xs text-violet-200">
+                        <span className="rounded-full border border-earth/20 bg-earth/[0.08] px-2.5 py-1 text-xs text-earth-light">
                           {criatura.tipo}
                         </span>
                       </td>
                       <td className="px-5 py-4">
-                        <span className="inline-flex items-center gap-2 text-slate-300">
+                        <span className="inline-flex items-center gap-2 text-stone-300">
                           <span className="h-1.5 w-12 overflow-hidden rounded-full bg-white/[0.08]">
                             <span
                               className="block h-full rounded-full bg-gradient-to-r from-signal to-rose-400"
@@ -121,7 +121,7 @@ export function ListaCriaturas() {
                           {criatura.nivelPeligro}
                         </span>
                       </td>
-                      <td className="px-5 py-4 text-slate-300">{criatura.estado}</td>
+                      <td className="px-5 py-4 text-stone-300">{criatura.estado}</td>
                       <td className="px-5 py-4">
                         <div className="flex items-center gap-2">
                           <Link to={`/criaturas/${criatura._id}`} className="secondary-button !px-3 !py-1.5 !text-xs">

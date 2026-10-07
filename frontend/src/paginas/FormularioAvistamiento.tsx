@@ -63,7 +63,7 @@ export function FormularioAvistamiento() {
     return (
       <MarcoPagina>
         <div className="panel flex items-center gap-4 p-8 text-sm text-mist">
-          <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-signal shadow-[0_0_18px_rgba(82,215,245,0.8)]" />
+          <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-signal shadow-[0_0_18px_rgba(217,164,65,0.8)]" />
           Cargando formulario...
         </div>
       </MarcoPagina>
@@ -75,14 +75,14 @@ export function FormularioAvistamiento() {
       <div className="mx-auto max-w-3xl">
         <Link
           to="/avistamientos"
-          className="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-slate-400 transition hover:text-signal"
+          className="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-stone-400 transition hover:text-signal"
         >
           <span aria-hidden="true">←</span>
           Ver avistamientos
         </Link>
         <section className="panel overflow-hidden">
-          <div className="border-b border-line bg-gradient-to-r from-violet/[0.1] via-transparent to-signal/[0.08] px-6 py-7 sm:px-9">
-            <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-violet/25 bg-violet/[0.09] text-xl">
+          <div className="border-b border-line bg-gradient-to-r from-earth/[0.1] via-transparent to-signal/[0.08] px-6 py-7 sm:px-9">
+            <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-earth/25 bg-earth/[0.09] text-xl">
               <span aria-hidden="true">◉</span>
             </span>
             <h1 className="text-3xl font-extrabold tracking-[-0.04em] text-white">Registrar avistamiento</h1>
@@ -96,7 +96,7 @@ export function FormularioAvistamiento() {
             )}
 
             <div>
-              <label htmlFor="criatura" className="mb-2 block text-sm font-semibold text-slate-200">
+              <label htmlFor="criatura" className="mb-2 block text-sm font-semibold text-stone-200">
                 Criatura:
               </label>
               <select
@@ -115,7 +115,7 @@ export function FormularioAvistamiento() {
 
             <div className="grid gap-6 sm:grid-cols-2">
               <div>
-                <label htmlFor="testigo" className="mb-2 block text-sm font-semibold text-slate-200">
+                <label htmlFor="testigo" className="mb-2 block text-sm font-semibold text-stone-200">
                   Testigo:
                 </label>
                 <input
@@ -128,7 +128,7 @@ export function FormularioAvistamiento() {
               </div>
 
               <div>
-                <label htmlFor="fecha" className="mb-2 block text-sm font-semibold text-slate-200">
+                <label htmlFor="fecha" className="mb-2 block text-sm font-semibold text-stone-200">
                   Fecha:
                 </label>
                 <input
@@ -142,7 +142,7 @@ export function FormularioAvistamiento() {
             </div>
 
             <div>
-              <label htmlFor="ubicacion" className="mb-2 block text-sm font-semibold text-slate-200">
+              <label htmlFor="ubicacion" className="mb-2 block text-sm font-semibold text-stone-200">
                 Ubicación:
               </label>
               <input
@@ -155,7 +155,7 @@ export function FormularioAvistamiento() {
             </div>
 
             <div>
-              <label htmlFor="descripcion" className="mb-2 block text-sm font-semibold text-slate-200">
+              <label htmlFor="descripcion" className="mb-2 block text-sm font-semibold text-stone-200">
                 Descripción (opcional):
               </label>
               <input
