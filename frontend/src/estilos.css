@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    background: #090b10;
+  }
+
+  body {
+    @apply m-0 min-h-screen bg-night text-slate-100 antialiased;
+    background-image:
+      radial-gradient(ellipse at 8% 12%, rgba(25, 116, 142, 0.14), transparent 33rem),
+      radial-gradient(ellipse at 90% 26%, rgba(84, 63, 139, 0.13), transparent 35rem);
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+
+  ::selection {
+    @apply bg-signal/30 text-white;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-3xl border border-line/90 bg-panel/90 shadow-2xl shadow-black/20;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-line bg-night/70 px-4 py-3 text-sm text-slate-100 outline-none transition placeholder:text-slate-600 focus:border-signal/70 focus:ring-2 focus:ring-signal/10;
+  }
+
+  .primary-button {
+    @apply inline-flex items-center justify-center rounded-xl border border-signal/25 bg-signal/10 px-5 py-3 text-sm font-bold text-signal transition hover:border-signal/60 hover:bg-signal/15 hover:shadow-glow disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center rounded-xl border border-line bg-white/[0.035] px-4 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-signal/40 hover:bg-white/[0.07] hover:text-white;
+  }
+
+  .table-heading {
+    @apply px-5 py-4 text-left font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-slate-500;
+  }
+}
