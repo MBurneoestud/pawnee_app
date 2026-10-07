@@ -36,7 +36,7 @@ export function ListaCriaturas() {
           />
           <div className="max-w-3xl">
             <span className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-signal/20 bg-signal/[0.08] text-xl">
-              <span aria-hidden="true">👁️</span>
+              <span aria-hidden="true">🧭</span>
             </span>
             <h1 className="text-3xl font-extrabold tracking-[-0.045em] text-white sm:text-5xl">
               Criaturas de Pawnee

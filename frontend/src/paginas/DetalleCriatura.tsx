@@ -89,7 +89,7 @@ export function DetalleCriatura() {
           <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
             <div>
               <span className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-signal/20 bg-signal/[0.08] text-xl">
-                <span aria-hidden="true">👁️</span>
+                <span aria-hidden="true">🧭</span>
               </span>
               <h1 className="text-4xl font-extrabold tracking-[-0.045em] text-white sm:text-5xl">{criatura.nombre}</h1>
               <div className="mt-5 flex flex-wrap gap-2">

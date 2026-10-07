@@ -21,7 +21,7 @@ export function MarcoPagina({ children }: MarcoPaginaProps) {
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-4 sm:px-8 lg:flex-row lg:items-center lg:justify-between">
           <Link to="/" className="group flex w-fit items-center gap-3.5">
             <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-signal/20 bg-gradient-to-br from-signal/15 to-earth/20 text-xl shadow-glow transition group-hover:border-signal/50">
-              <span aria-hidden="true">👁️</span>
+              <span aria-hidden="true">🧭</span>
             </span>
             <span className="text-base font-extrabold tracking-tight text-white sm:text-lg">
               Departamento de Pawnee

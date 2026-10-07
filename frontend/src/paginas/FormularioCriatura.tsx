@@ -94,7 +94,7 @@ export function FormularioCriatura() {
         <section className="panel overflow-hidden">
           <div className="border-b border-line bg-gradient-to-r from-signal/[0.08] via-transparent to-earth/[0.08] px-6 py-7 sm:px-9">
             <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-signal/20 bg-signal/[0.08] text-lg">
-              <span aria-hidden="true">👁️</span>
+              <span aria-hidden="true">🧭</span>
             </span>
             <h1 className="text-3xl font-extrabold tracking-[-0.04em] text-white">
               {esEdicion ? "Editar criatura" : "Registrar criatura nueva"}
